@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(25, 20px);
+    grid-template-columns: repeat(7, 35px);
+    background-color: black;
+    width: max-content;
+}
+
+.mini-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 14px);
+    grid-template-columns: repeat(5, 10px);
+    background-color: black;
+}
+
+.grid div, .mini-grid div {
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+
+.tetromino {
+    background-color: yellow;
+}

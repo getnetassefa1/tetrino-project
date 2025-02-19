@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Score: <span id="score">0</span></h1>
+    <button id="myButton" onclick="startPause()">Start</button>
+
+    <div class="container">
+        <div class="grid"></div>
+        <div class="mini-grid"></div>
+    </div>
+
+    <br>
+    <button id="toLeft" onclick="controller(event)">Left</button> &nbsp;&nbsp;&nbsp;
+    <button id="toRight" onclick="controller(event)">Right</button><br><br>
+    <button id="toDown" onclick="controller(event)">Down</button>&nbsp;
+    <button id="rotate" onclick="controller(event)">Rotate</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
